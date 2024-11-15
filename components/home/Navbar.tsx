@@ -6,7 +6,7 @@ import image2 from '@/public/image1.png'
 
 export default function Navbar(){
     return (
-        <div className={'flex fixed justify-between items-center px-[10%] bg-white'}>
+        <div className={'flex fixed justify-between items-center px-[10%] bg-white z-50 left-0 w-full'}>
             <div className={styles.logo}>
                 <Image src={logo} alt={''} className={'object-cover object-center flex justify-center items-center'}/>
             </div>

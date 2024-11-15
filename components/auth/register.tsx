@@ -22,25 +22,26 @@ export default function SignUp(){
         const handleSubmit=()=>{
             return true
         }
-    const SignUp = ()=>{
-        return (
-            <div className={styles.form}>
-                <form onSubmit={handleSubmit} className={styles.formInner}>
-                    <p className={styles.create}>Create an account</p>
-                    <input type="text" placeholder={'Username'} className={styles.input}/>
-                    <input type="text" placeholder={'Full Name'} className={styles.input}/>
-                    <input type="email" placeholder={'Email'} className={styles.input}/>
-                    <input type="password" placeholder={'Password'} className={styles.input}/>
-                    <button className={styles.register}>Register</button>
-                    <article className={styles.privacyPolicy}>
-                        <input type="checkbox"/>
-                        <p className={'text-xs flex text-nowrap gap-[2px]'}>i confirm that i have read and accepted the <span className={styles.privacyPolicyText}>privacy policy</span></p>
-                    </article>
-                </form>
-            </div>
 
-        )
-    }
+        const SignUp = ()=>{
+            return (
+                <div className={styles.form}>
+                    <form onSubmit={handleSubmit} className={styles.formInner}>
+                        <p className={styles.create}>Create an account</p>
+                        <input type="text" placeholder={'Username'} className={styles.input}/>
+                        <input type="text" placeholder={'Full Name'} className={styles.input}/>
+                        <input type="email" placeholder={'Email'} className={styles.input}/>
+                        <input type="password" placeholder={'Password'} className={styles.input}/>
+                        <button className={styles.register}>Register</button>
+                        <article className={styles.privacyPolicy}>
+                            <input type="checkbox"/>
+                            <p className={'text-xs flex text-nowrap gap-[2px]'}>i confirm that i have read and accepted the <span className={styles.privacyPolicyText}>privacy policy</span></p>
+                        </article>
+                    </form>
+                </div>
+
+            )
+        }
 
     const SignIn = ()=>{
         return(
