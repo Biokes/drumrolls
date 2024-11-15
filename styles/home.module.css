@@ -1,0 +1,53 @@
+.logo{
+    @apply h-[50px] w-[90px] overflow-hidden flex items-center justify-center
+}
+.navbar{
+    @apply hidden md:flex gap-[40px]
+}
+.normalHeader, .navbar> p{
+    @apply text-xs font-bold
+}
+.naira{
+    font-family: 'Dm sans', sans-serif;
+    @apply flex text-xs font-bold
+}
+.image{
+    @apply rounded-2xl p-1 border-[1px] flex justify-center items-center overflow-hidden h-[25px] w-[25px]
+}
+.innerNav{
+    @apply flex gap-[15px] justify-center items-center
+}
+.heroImage{
+    @apply flex flex-col justify-center items-center relative
+}
+.hero{
+    @apply w-full overflow-hidden flex justify-center items-center relative h-[250px]
+ }
+.luxury{
+    font-family: 'Dm sans', sans-serif;
+    @apply text-white md:text-4xl text-lg
+}
+.shortlet{
+    @apply text-[#1A2B48] font-bold text-lg
+}
+.shortletContainer{
+    @apply  bg-[#F7F8FA] flex flex-col md:w-[100%] gap-[10px] md:px-[10%] w-[100%]
+}
+.inputs{
+    @apply flex items-start md:shadow-md md:rounded-[70px] md:px-[30px] gap-[10px] flex-col md:flex-row md:items-center md:py-[10px] md:bg-white md:border-gray-300 md:border-[1px]
+}
+.inputs>div> input{
+    @apply w-[60%] outline-none rounded-md h-[40px] md:h-[20px] md:w-[100%] text-xs
+}
+.inputs>div>p{
+    @apply text-xs font-bold
+}
+.header{
+    @apply items-center pt-[30px] flex flex-col md:flex-row md:justify-between
+}
+.ptags{
+    @apply flex flex-col gap-[10px] py-[20px] h-[400px]
+}
+.ptags>p{
+    @apply text-[10px] md:text-[12px] px-[10px] md:px-0
+}

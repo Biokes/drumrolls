@@ -1,0 +1,36 @@
+.signUpParent{
+    @apply  flex flex-col justify-center items-center w-[100vw] h-[100vh] md:px-[20px]
+}
+.authHeader{
+    border-image: linear-gradient( to right, #888888, #888888) 0 0  1 0;
+    @apply   flex mb-[20px] w-[300px] gap-[60px] pb-[20px] justify-start border-[1px]
+}
+.privacyPolicy{
+    @apply flex gap-[5px]
+}
+.privacyPolicyText{
+    @apply text-xs text-blue-400 hover:cursor-pointer
+}
+.form{
+    @apply flex
+}
+.formInner{
+    @apply flex flex-col gap-[10px]
+}
+.create{
+    font-family: sans-serif ,'Dm sans';
+    font-weight: 750;
+    @apply caption-top mb-[20px];
+}
+.register{
+    @apply w-[55%] bg-blue-500 text-white font-bold text-sm capitalize rounded-[10px] py-[5px]
+}
+.input{
+    @apply p-[5px_10px] rounded-[10px] border-[1px] border-gray-300
+}
+.forgotPassword{
+    @apply capitalize text-xs font-thin underline hover:cursor-pointer
+}
+.signInFooter{
+    @apply flex justify-between items-center pt-[10px]
+}
