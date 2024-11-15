@@ -6,10 +6,12 @@ import StoryBoard from "@/components/home/StoryComp";
 export default function Home(){
     return (
         <div>
+
             <Navbar/>
             <Hero/>
             <Shortlet/>
             <StoryBoard/>
+
         </div>
     )
 }

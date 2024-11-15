@@ -39,6 +39,7 @@ export default function Shortlet(){
     const ImagesPack=()=>{
         return (
             <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] '}>
+
                 {images.map((data,index)=>(
                     <div key={index} className={'flex flex-col my-[10px]'}>
                         <div className="flex flex-col relative">

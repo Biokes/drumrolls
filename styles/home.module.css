@@ -49,5 +49,5 @@
     @apply flex flex-col gap-[10px] py-[20px] h-[400px]
 }
 .ptags>p{
-    @apply text-[10px] md:text-[12px] px-[10px] md:px-0
+    @apply text-[10px] lg:text-[12px] px-[10px] md:px-0
 }

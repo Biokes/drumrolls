@@ -7,6 +7,7 @@ import heroImage from '@/public/image101.jpeg'
 export default function Hero(){
     return (
         <div className={styles.hero}>
+
             <div className="absolute w-full h-[400px] bg-cover bg-center brightness-[.6] overflow-hidden">
                 <Image src={heroImage} alt="" className="object-center w-full h-[100vh]"/>
             </div>

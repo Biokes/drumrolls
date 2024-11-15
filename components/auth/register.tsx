@@ -41,6 +41,7 @@ export default function SignUp(){
 
         )
     }
+
     const SignIn = ()=>{
         return(
             <div>
