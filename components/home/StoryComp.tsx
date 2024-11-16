@@ -48,11 +48,11 @@ export default function StoryBoard(){
                 </div>
             </div>
             <div className={'w-full'}>
-                <div className={"relative h-[400px] w-full flex flex-col"}>
-                    <Image src={map101} alt={''} className={'object-center object-cover w-full h-full scale-105 rounded-md'}/>
-                    <div className={"absolute bottom-0 left-0 w-full flex gap-[3px] pl-[10px] flex-col"}>
+                <div className={"relative h-[400px] w-full flex flex-col "}>
+                    <Image src={map101} alt={''} className={'object-center object-cover w-full h-full rounded-md overflow-hidden'}/>
+                    <div className={"absolute bottom-0 left-0 w-full flex gap-[3px] pl-[10px] md:px-[20%] flex-col"}>
                         <p className="text-white text-[12px]">Hottest Apartment</p>
-                        <p className="text-lg text-white">Sigmabase Apartment VI</p>
+                        <p className="text-lg text-white lg:text">Sigmabase Apartment VI</p>
                         <p className={'text-xs mt-[10px] md:mt-[22px] flex gap-[5px] text-white'}>discover more <span className={'text-sm text-white'}>{lessThan}</span></p>
                     </div>
                 </div>

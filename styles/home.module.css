@@ -51,3 +51,7 @@
 .ptags>p{
     @apply text-[10px] lg:text-[12px] px-[10px] md:px-0
 }
+.framer{
+    border-image: linear-gradient( to right, #888888, #888888) 1 0  0 0;
+    @apply flex flex-col md:flex-row border-[1px] md:w-[70%] md:justify-between items-center py-[10px];
+}
