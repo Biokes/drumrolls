@@ -81,7 +81,9 @@ export default function Shortlet(){
 
     return (
         <div className={styles.shortletContainer}>
-            <div className={styles.header}>
+            <div
+                className={styles.header}
+            >
                 <p className={styles.shortlet}>Shortlets in Lekki and VI Lagos</p>
                 <div className={styles.inputs}>
                     <div>

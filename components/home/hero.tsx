@@ -7,11 +7,10 @@ import heroImage from '@/public/image101.jpeg'
 export default function Hero(){
     return (
         <div className={styles.hero}>
-
-            <div className="absolute w-full h-[400px] bg-cover bg-center brightness-[.6] overflow-hidden">
+            <div className="relative w-full h-[600px] md:h-[400px] bg-cover bg-center brightness-[.6] overflow-hidden">
                 <Image src={heroImage} alt="" className="object-center w-full h-[100vh]"/>
             </div>
-            <div className={`relative w-full justify-between items-center gap-[5px] flex flex-col`}>
+            <div className="absolute inset-0 flex flex-col justify-center items-center gap-[5px] pt-[10%] md:pt-0">
                 <div className={'flex flex-col justify-center items-center'}>
                     <p className={styles.luxury}>Luxury shortlet apartments in Lekki and VI Lagos</p>
                     <p className={'text-[9px] md:text-[12px] text-white text-center px-[10px] md:px-0'}>
@@ -20,7 +19,7 @@ export default function Hero(){
                 </div>
                 <div className={'flex flex-col md:flex-row bg-white md:p-[5px] rounded-md w-[80%] md:w-[60%] justify-between items-start md:items-center p-[5px_10px] gap-[5px] md:gap-0'}>
                     <div className={'flex flex-col gap-[2px] md:gap-0'}>
-                        <p className={'text-[10px] text-[#FE6A00] font-bold caption-top'}>Get special offers, and more from Heristays shortlets.</p>
+                        <p className={'text-[8px] md:text-[10px] text-[#FE6A00] font-bold caption-top'}>Get special offers, and more from Heristays shortlets.</p>
                         <p className={'text-[10px]  font-thin'}>Subscribe to see secret deals, prices and reductions</p>
                     </div>
                     <div className={'flex justify-center items-center border-[1px] border-gary-500 rounded-md w-[100%] md:w-[50%] p-[2px] gap-[7px] md:px-[5px] px-[7px]'}>
