@@ -39,21 +39,24 @@ export default function Shortlet(){
     const ImagesPack=()=>{
         return (
             <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] '}>
-
-                {images.map((data,index)=>(
+                {images.map((data, index) => (
                     <div key={index} className={'flex flex-col my-[10px]'}>
                         <div className="flex flex-col relative">
                             <div className="relative h-[300px] w-[100vw] sm:w-[350px] overflow-hidden">
-                                <Image src={data.image} alt={''} className={'object-center object-cover w-full h-full scale-105 rounded-md'}/>
+                                <Image src={data.image} alt={''} className={'object-center object-cover w-full h-full rounded-md'}/>
                                 <div className={"absolute bottom-0 left-0 w-full flex gap-[3px] pl-[10px]"}>
                                     <p className="text-white text-[17px] font-bold">₦ {data.price}</p>
                                     <p className="text-[14px] text-white">/night</p>
                                 </div>
                             </div>
                         </div>
-                        <div className={'bg-[#ffffff] pl-[20px] pb-[10px]'}>
+                        <div className={`bg-[#ffffff] pl-[20px] pb-[10px] cursor-pointer h-[100px] overflow-hidden hover:h-[300px] hover:overflow-y-scroll`}>
                             <div className={'flex gap-[10px] py-[10px]'}>
-                                <p  style={{fontFamily:'DM sans', fontWeight:900, color:'#484848'}}>{data.apartment}</p>
+                                <p style={{
+                                    fontFamily: 'DM sans',
+                                    fontWeight: 900,
+                                    color: '#484848'
+                                }}>{data.apartment}</p>
                             </div>
                             <div className={'flex justify-between '}>
                                 <div className={'flex flex-col gap-[5px]'}>
@@ -64,12 +67,20 @@ export default function Shortlet(){
                                     </div>
                                     <div className={'flex gap-[10px]'}>
                                         <Image src={home} alt={''} className={'w-[12px] h-[12px]'}/>
-                                        <p className={'text-[12px]'} style={{fontFamily: 'Roboto Slab'}}>{data.house}</p>
+                                        <p className={'text-[12px]'}
+                                           style={{fontFamily: 'Roboto Slab'}}>{data.house}</p>
                                     </div>
                                 </div>
                                 <div className={`${styles.image} bg-[#F7CDCC] border-0 mr-[10px]`}>
                                     <Image src={love} alt={''}/>
                                 </div>
+                            </div>
+                            <div className={` mt-[10px]`}>
+                                <p className="text-[13px] text-gray-700 font-bold">
+                                    Fully serviced with 24/7 power, superfast internet, fully equipped kitchen,
+                                    regularly cleaned with towel and linen refresh, serene environment with hotel & gym.
+                                </p>
+                                <button className="mt-[10px] px-[15px] py-[8px] bg-[#FE6A28] text-white text-sm font-bold rounded-md">Book Now</button>
                             </div>
 
                         </div>
