@@ -1,3 +1,4 @@
+'use client'
 import Navbar from "@/components/home/Navbar";
 import Hero from "@/components/home/hero";
 import Shortlet from "@/components/home/shortlets";
